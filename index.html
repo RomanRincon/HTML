@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="full-name">Full Name *</label>
+        <input type="text" id="full-name" name="full-name" required><br>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="tour-package">Select Tour Package *</label>
+        <select id="tour-package" name="tour-package">
+            <option value="Goa">Goa</option>
+
+        </select><br>
+
+
+        <label>Additional Services:</label><br>
+        <input type="checkbox" id="boarding" name="boarding" value="boarding">
+        <label for="boarding">Boarding</label><br>
+
+
+        <label for="discount-code">Discount Coupon Code:</label>
+        <input type="text" id="discount-code" name="discount-code"><br>
+
+        <label>Terms and Conditions:</label><br>
+        <input type="radio" id="agree" name="terms" value="agree">
+        <label for="agree">I agree</label>
+        <input type="radio" id="disagree" name="terms" value="disagree">
+        <label for="disagree">I disagree</label><br>
+
+        <button type="submit">Complete Reservation</button>
+    </form>
+</body>
+</html>
+
+
+
+
